@@ -37,7 +37,9 @@ app.use("/files", express.static(path.join(__dirname, "..", "nitj_files")));
 //allowing all cross origin requests
 app.use(
   cors({
-    origin: "*",
+    origin:"*",
+		credentials:true,
+		optionSuccessStatus:200,
   })
 );
 
@@ -54,6 +56,7 @@ const port = process.env.PORT || 8000;
 mongoose
   .connect(process.env.URI, {
     useNewUrlParser: true,
+    useUnifiedTopology:true,
   })
   .then(() => {
     console.log("connection to database eshtablished");

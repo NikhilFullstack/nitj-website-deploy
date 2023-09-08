@@ -20,7 +20,6 @@ const CoordSchema = new mongoose.Schema(
         sourceOfInfo: {
             type: String
         },
-        desc: { type: String, default: "" },
     }, {
     timestamps: true,
 }

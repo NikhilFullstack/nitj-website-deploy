@@ -86,7 +86,7 @@ const { getByDeptPublication } = require("../controllers/deptPublications");
 const { getByDeptProject } = require("../controllers/deptProjects");
 const { getByDeptClubs } = require("../controllers/deptClubs");
 const { getByDeptCoordinator } = require("../controllers/deptCoordinator");
-const { getByDeptDeptImages, addImageDescById } = require("../controllers/deptImages");
+const { getByDeptDeptImages } = require("../controllers/deptImages");
 const { getByDeptContactUs } = require("../controllers/deptContactUs");
 const { getByDeptDescription } = require("../controllers/deptDescription");
 
